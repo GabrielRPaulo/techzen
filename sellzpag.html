@@ -1,0 +1,925 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>sellpag - Soluções de Pagamento Descomplicadas</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Centralize seus recebíveis e automatize o repasse para parceiros, vendedores ou franqueados com a plataforma sellpag.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./assets/css/animation.css">
+
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./assets/css/remixicon.css">
+
+    <link rel="stylesheet" href="./assets/css/slick.css">
+
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+
+    <link rel="stylesheet" href="./assets/css/flickity.css">
+
+    <link rel="stylesheet" href="./assets/css/odometer.min.css">
+
+    <link rel="stylesheet" href="./assets/css/skeletabs.css">
+
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="./assets/css/rs-layouts.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="home-page-2">
+
+    <div class="full-width-header rs-header-layout2">
+        <header id="rs-header" class="rs-header">
+            <div class="rs-header-topber">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rs-flex-box">
+                                <div class="rs-header-topber-contact">
+                                    <ul>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                                <path d="M11 17.9381C7.05369 17.446 4 14.0796 4 10C4 5.58172 7.58172 2 12 2C16.4183 2 20 5.58172 20 10C20 14.0796 16.9463 17.446 13 17.9381V20.0116C16.9463 20.1039 20 20.7351 20 21.5C20 22.3284 16.4183 23 12 23C7.58172 23 4 22.3284 4 21.5C4 20.7351 7.05369 20.1039 11 20.0116V17.9381ZM12 16C15.3137 16 18 13.3137 18 10C18 6.68629 15.3137 4 12 4C8.68629 4 6 6.68629 6 10C6 13.3137 8.68629 16 12 16ZM12 12C10.8954 12 10 11.1046 10 10C10 8.89543 10.8954 8 12 8C13.1046 8 14 8.89543 14 10C14 11.1046 13.1046 12 12 12Z" fill="#000"></path>
+                                            </svg>
+                                            <span>Av. Paulista, 1000 - São Paulo, SP</span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+                                                <path d="M16 12.3687C15.9987 12.5597 15.9223 12.7425 15.7873 12.8777C15.6523 13.0128 15.4695 13.0894 15.2785 13.0909H2.176C1.98459 13.0907 1.80109 13.0145 1.66581 12.8791C1.53053 12.7437 1.45455 12.5601 1.45455 12.3687V11.6364H14.5455V3.12727L8.72727 8.36364L1.45455 1.81818V0.727273C1.45455 0.534388 1.53117 0.349403 1.66756 0.213013C1.80395 0.0766231 1.98893 0 2.18182 0H15.2727C15.4656 0 15.6506 0.0766231 15.787 0.213013C15.9234 0.349403 16 0.534388 16 0.727273V12.3687ZM3.22473 1.45455L8.72727 6.40727L14.2298 1.45455H3.22473ZM0 8.72727H5.81818V10.1818H0V8.72727ZM0 5.09091H3.63636V6.54545H0V5.09091Z" fill="#1A73E9"></path>
+                                            </svg>
+                                            <span>Email: <a href="mailto:contato@sellpag.com.br">contato@sellpag.com.br</a></span>
+                                        </li>
+                                        <li>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                <path d="M8 16C3.5816 16 0 12.4184 0 8C0 3.5816 3.5816 0 8 0C12.4184 0 16 3.5816 16 8C16 12.4184 12.4184 16 8 16ZM8 14.4C9.69739 14.4 11.3253 13.7257 12.5255 12.5255C13.7257 11.3253 14.4 9.69739 14.4 8C14.4 6.30261 13.7257 4.67475 12.5255 3.47452C11.3253 2.27428 9.69739 1.6 8 1.6C6.30261 1.6 4.67475 2.27428 3.47452 3.47452C2.27428 4.67475 1.6 6.30261 1.6 8C1.6 9.69739 2.27428 11.3253 3.47452 12.5255C4.67475 13.7257 6.30261 14.4 8 14.4ZM8.8 8H12V9.6H7.2V4H8.8V8Z" fill="#1A73E9"></path>
+                                            </svg>
+                                            <span>Seg-Sex: 9:00h às 18:00h</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="rs-header-topber-social">
+                                    <span>Siga-nos:</span>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="rs-menu-area">
+                        <div class="logo-area">
+                            <a href="index.html"><img src="https://via.placeholder.com/150x50/F26F20/FFFFFF?text=SELLPAG+LOGO" alt="sellpag Logo"></a>
+                            <a href="index.html"><img src="https://via.placeholder.com/150x50/F26F20/FFFFFF?text=SELLPAG+LOGO" alt="sellpag Logo Sticky"></a>
+                        </div>
+                        <div class="rs-header-rightside">
+                            <div class="main-menu hidden-md">
+                                <ul class="nav-menu">
+                                    <li><a class="page-scroll" href="#rs-header">Home</a></li>
+                                    <li><a class="page-scroll" href="#rs-about-sellpag">Sobre</a></li>
+                                    <li><a class="page-scroll" href="#rs-features">Vantagens</a></li>
+                                    <li><a class="page-scroll" href="#rs-why-choose">Diferenciais</a></li>
+                                    <li><a class="page-scroll" href="#rs-pricing">Planos</a></li>
+                                    <li><a class="page-scroll" href="#rs-faq">FAQ</a></li>
+                                    <li><a class="page-scroll" href="#rs-contact-form">Contato</a></li>
+                                </ul> </div> <div class="header-btn">
+                                <a class="main-btn" href="#rs-contact-form">Fale Conosco <svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M12 13H4V11H12V4L20 12L12 20V13Z"></path>
+                                    </svg></a>
+                            </div>
+                            <div class="canvasmenu-trigger view-md">
+                                <i class="fa fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </header>
+        </div>
+    <div class="offcanvas-menu offcanvas-menu-2">
+        <div class="menu-canvas-close"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="offcanvas-menu-inner">
+            <div class="offc-logo mb-40">
+                <a href="index.html"><img src="https://via.placeholder.com/150x50/F26F20/FFFFFF?text=SELLPAG+LOGO" alt="sellpag Logo"></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a class="page-scroll" href="#rs-header">Home</a></li>
+                <li><a class="page-scroll" href="#rs-about-sellpag">Sobre</a></li>
+                <li><a class="page-scroll" href="#rs-features">Vantagens</a></li>
+                <li><a class="page-scroll" href="#rs-why-choose">Diferenciais</a></li>
+                <li><a class="page-scroll" href="#rs-pricing">Planos</a></li>
+                <li><a class="page-scroll" href="#rs-faq">FAQ</a></li>
+                <li><a class="page-scroll" href="#rs-contact-form">Contato</a></li>
+            </ul> </div>
+    </div>
+    <div id="pre-load">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class='loader-icon'><img src="assets/images/favicon.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <section class="rs-banner-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="rs-banner-2__content">
+                        <img class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="0s" src="https://via.placeholder.com/700x400/F26F20/FFFFFF?text=IMAGEM+HERO" alt="sellpag dashboard">
+                        <h1 class="title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">O split de pagamentos, finalmente simples e automatizado.</h1>
+                        <p class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">Centralize seus recebíveis e automatize o repasse para parceiros, vendedores ou franqueados com a plataforma sellpag.</p>
+                        <a class="main-btn wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.6s" href="#rs-contact-form">Fale com um Especialista <i class="ri-arrow-right-fill"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </section>
+    <div class="rs-brand pb-90 pt-85">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rs-brand__top-title">
+                        <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="">
+                        <span>Empresas que confiam na sellpag:</span>
+                        <img src="assets/images/heart-pulse-rate-orange.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rs-brand__slider">
+                        <div class="rs-carousel owl-carousel nav-style1" data-loop="true" data-items="5" data-margin="0" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="3000" data-smart-speed="500" data-dots="false" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="2" data-mobile-device-nav="false" data-mobile-device-dots="false" data-ipad-device="4" data-ipad-device-nav="false" data-ipad-device-dots="false" data-ipad-device2="3" data-ipad-device-nav2="false" data-ipad-device-dots2="false" data-md-device="4" data-lg-device="5" data-md-device-nav="false" data-md-device-dots="false" data-doteach="false">
+                            <div class="rs-brand-slider-item"><a href="#"><img src="https://via.placeholder.com/120x60/CCCCCC/888888?text=CLIENTE+1" alt="Cliente 1"></a></div>
+                            <div class="rs-brand-slider-item"><a href="#"><img src="https://via.placeholder.com/120x60/CCCCCC/888888?text=CLIENTE+2" alt="Cliente 2"></a></div>
+                            <div class="rs-brand-slider-item"><a href="#"><img src="https://via.placeholder.com/120x60/CCCCCC/888888?text=CLIENTE+3" alt="Cliente 3"></a></div>
+                            <div class="rs-brand-slider-item"><a href="#"><img src="https://via.placeholder.com/120x60/CCCCCC/888888?text=CLIENTE+4" alt="Cliente 4"></a></div>
+                            <div class="rs-brand-slider-item"><a href="#"><img src="https://via.placeholder.com/120x60/CCCCCC/888888?text=CLIENTE+5" alt="Cliente 5"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rs-service-2 pt-90 pb-120" id="rs-problem">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="rs-section-title black text-center mb-60">
+                        <div class="top-sub-heading">
+                            <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                            <span>Desafios na Gestão de Pagamentos?</span>
+                            <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                        </div>
+                        <h2 class="title split-in-fade">A sua operação de pagamentos parece complexa demais?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rs-service-2__grid">
+                        <div class="rs-service-2__item">
+                            <div class="rs-service-2__icon">
+                                <img src="https://via.placeholder.com/60x60/F26F20/FFFFFF?text=Icon" alt="Icone de Dificuldade">
+                            </div>
+                            <h5 class="title">Dificuldade no repasse de comissões?</h5>
+                        </div>
+                        <div class="rs-service-2__item">
+                            <div class="rs-service-2__icon">
+                                <img src="https://via.placeholder.com/60x60/F26F20/FFFFFF?text=Icon" alt="Icone de Transparência">
+                            </div>
+                            <h5 class="title">Falta de transparência para os seus parceiros?</h5>
+                        </div>
+                        <div class="rs-service-2__item">
+                            <div class="rs-service-2__icon">
+                                <img src="https://via.placeholder.com/60x60/F26F20/FFFFFF?text=Icon" alt="Icone de Erros">
+                            </div>
+                            <h5 class="title">Processos manuais e erros de conciliação?</h5>
+                        </div>
+                        <div class="rs-service-2__item">
+                            <div class="rs-service-2__icon">
+                                <img src="https://via.placeholder.com/60x60/F26F20/FFFFFF?text=Icon" alt="Icone de Custos">
+                            </div>
+                            <h5 class="title">Altos custos operacionais com gestão financeira?</h5>
+                        </div>
+                        <div class="rs-service-2__item">
+                            <div class="rs-service-2__icon">
+                                <img src="https://via.placeholder.com/60x60/F26F20/FFFFFF?text=Icon" alt="Icone de Escala">
+                            </div>
+                            <h5 class="title">Escalar seu negócio sem complicação?</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="rs-how-it-works" class="rs-about-2 pt-120 pb-30">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rs-about-2__thumb">
+                        <img src="https://via.placeholder.com/600x450/34495E/FFFFFF?text=FLUXO+DE+TRABALHO" alt="Como funciona a sellpag">
+                        <div class="rs-shape">
+                            <img class=" gsap-move left-100 start-91" src="assets/images/about/about-shape.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rs-about-2__main-content">
+                        <div class="rs-section-title black">
+                            <div class="top-sub-heading">
+                                <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                                <span>A Solução Completa</span>
+                                <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                            </div>
+                            <h2 class="title split-in-fade">Transforme a complexidade em simplicidade com a sellpag.</h2>
+                            <p>Descomplicamos a gestão de pagamentos para que você possa focar no que realmente importa: o crescimento do seu negócio. Veja como funciona:</p>
+                            <div class="skltbs-panel-group">
+                                <div class="skltbs-panel active">
+                                    <ul>
+                                        <li><i class="ri-checkbox-circle-line"></i> <b>1. A Venda é Realizada:</b> O cliente efetua o pagamento na sua plataforma.</li>
+                                        <li><i class="ri-checkbox-circle-line"></i> <b>2. Divisão Inteligente:</b> A tecnologia sellpag divide automaticamente os valores para todos os recebedores (parceiros, vendedores, franqueados).</li>
+                                        <li><i class="ri-checkbox-circle-line"></i> <b>3. Recebimento Automatizado:</b> Cada parte recebe sua parcela de forma rápida e segura, com total transparência.</li>
+                                    </ul>
+                                    <a class="main-btn" href="#rs-contact-form">
+                                        Solicite uma Demonstração
+                                        <i class="ri-arrow-right-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rs-about-sellpag" class="rs-about-2 pt-120 pb-30">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rs-about-2__thumb">
+                        <img src="https://via.placeholder.com/1000x929/34495E/FFFFFF?text=Sobre+a+sellpag" alt="Sobre a sellpag">
+                        <div class="rs-shape">
+                            <img class=" gsap-move left-100 start-91" src="assets/images/about/about-shape.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rs-about-2__main-content">
+                        <div class="rs-section-title black">
+                            <div class="top-sub-heading">
+                                <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                                <span>Sobre a sellpag</span>
+                                <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                            </div>
+                            <h2 class="title split-in-fade">Acreditamos que toda gestão de pagamentos pode ser simples.</h2>
+                            <p>Nascemos para revolucionar o mercado de pagamentos, oferecendo uma plataforma robusta e intuitiva que resolve os desafios mais complexos de repasses financeiros.</p>
+                            <div id="rs-tabs" class="skltbs-theme-light use-drop skltbs-mode-tabs skltbs-init">
+                                <ul class="skltbs-tab-group">
+                                    <li class="skltbs-tab-item">
+                                        <button class="skltbs-tab">Nossa Missão</button>
+                                    </li>
+                                    <li class="skltbs-tab-item">
+                                        <button class="skltbs-tab">Nossa Visão</button>
+                                    </li>
+                                    <li class="skltbs-tab-item">
+                                        <button class="skltbs-tab">Nossos Valores</button>
+                                    </li>
+                                </ul>
+                                <div class="skltbs-panel-group">
+                                    <div class="skltbs-panel">
+                                        <p>Simplificar e automatizar a gestão de pagamentos para negócios de todos os tamanhos, permitindo que foquem no seu crescimento com total segurança e transparência.</p>
+                                    </div>
+                                    <div class="skltbs-panel">
+                                        <p>Ser a plataforma líder em soluções de split de pagamento no Brasil, reconhecida pela inovação, segurança e por ser a maior parceira estratégica de nossos clientes.</p>
+                                    </div>
+                                    <div class="skltbs-panel">
+                                        <ul>
+                                            <li><i class="ri-share-forward-fill"></i>Transparência Total</li>
+                                            <li><i class="ri-share-forward-fill"></i>Segurança Inegociável</li>
+                                            <li><i class="ri-share-forward-fill"></i>Inovação Contínua</li>
+                                            <li><i class="ri-share-forward-fill"></i>Parceria com o Cliente</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rs-features" class="rs-featured-2 pt-115 pb-120">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="rs-section-title black text-center">
+                        <div class="top-sub-heading">
+                            <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                            <span>Recursos e Vantagens</span>
+                            <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                        </div>
+                        <h2 class="title split-in-fade">Vantagens que impulsionam o seu negócio.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="rs-featured-2__item">
+                        <div class="rs-thumb">
+                            <img src="https://via.placeholder.com/767x366/3498DB/FFFFFF?text=Dashboard+Intuitivo" alt="Dashboard Intuitivo">
+                        </div>
+                        <div class="rs-content">
+                            <div class="rs-icon">
+                                <img src="https://via.placeholder.com/60x60/3498DB/FFFFFF?text=Icon" alt="Icone">
+                            </div>
+                            <h4 class="title">Dashboard Intuitivo</h4>
+                            <p>Visualize e gerencie todas as suas transações e repasses em um único lugar, com relatórios claros e fáceis de entender.</p>
+                            <a class="rs-link" href="#rs-contact-form">Saiba Mais <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="rs-featured-2__item">
+                        <div class="rs-thumb">
+                            <img src="https://via.placeholder.com/767x366/2ECC71/FFFFFF?text=Split+de+Pagamentos+Flexível" alt="Split de Pagamentos Flexível">
+                        </div>
+                        <div class="rs-content">
+                            <div class="rs-icon">
+                                <img src="https://via.placeholder.com/60x60/2ECC71/FFFFFF?text=Icon" alt="Icone">
+                            </div>
+                            <h4 class="title">Split de Pagamentos Flexível</h4>
+                            <p>Configure regras de divisão personalizadas para cada transação, garantindo que todos os envolvidos recebam sua parte corretamente.</p>
+                            <a class="rs-link" href="#rs-contact-form">Saiba Mais <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="rs-featured-2__item last-item">
+                        <div class="rs-thumb">
+                            <img src="https://via.placeholder.com/767x366/9B59B6/FFFFFF?text=Conciliação+Automática" alt="Conciliação Automática">
+                        </div>
+                        <div class="rs-content">
+                            <div class="rs-icon">
+                                <img src="https://via.placeholder.com/60x60/9B59B6/FFFFFF?text=Icon" alt="Icone">
+                            </div>
+                            <h4 class="title">Conciliação Automática</h4>
+                            <p>Reduza erros e economize tempo com a conciliação automática de todos os seus pagamentos e repasses.</p>
+                            <a class="rs-link" href="#rs-contact-form">Saiba Mais <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="rs-featured-2__item">
+                        <div class="rs-thumb">
+                            <img src="https://via.placeholder.com/767x366/E67E22/FFFFFF?text=Segurança+de+Ponta" alt="Segurança de Ponta">
+                        </div>
+                        <div class="rs-content">
+                            <div class="rs-icon">
+                                <img src="https://via.placeholder.com/60x60/E67E22/FFFFFF?text=Icon" alt="Icone">
+                            </div>
+                            <h4 class="title">Segurança de Ponta</h4>
+                            <p>Proteja suas transações e dados com as mais avançadas tecnologias de segurança do mercado.</p>
+                            <a class="rs-link" href="#rs-contact-form">Saiba Mais <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="rs-featured-2__item">
+                        <div class="rs-thumb">
+                            <img src="https://via.placeholder.com/767x366/1ABC9C/FFFFFF?text=Integração+Fácil" alt="Integração Fácil">
+                        </div>
+                        <div class="rs-content">
+                            <div class="rs-icon">
+                                <img src="https://via.placeholder.com/60x60/1ABC9C/FFFFFF?text=Icon" alt="Icone">
+                            </div>
+                            <h4 class="title">Integração Fácil</h4>
+                            <p>Integre a sellpag rapidamente à sua plataforma através de uma API robusta e documentação clara.</p>
+                            <a class="rs-link" href="#rs-contact-form">Saiba Mais <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="rs-featured-2__item last-item">
+                        <div class="rs-thumb">
+                            <img src="https://via.placeholder.com/767x366/C0392B/FFFFFF?text=Suporte+Dedicado" alt="Suporte Dedicado">
+                        </div>
+                        <div class="rs-content">
+                            <div class="rs-icon">
+                                <img src="https://via.placeholder.com/60x60/C0392B/FFFFFF?text=Icon" alt="Icone">
+                            </div>
+                            <h4 class="title">Suporte Dedicado</h4>
+                            <p>Conte com uma equipa de suporte especializada pronta para ajudar em todas as etapas da sua jornada.</p>
+                            <a class="rs-link" href="#rs-contact-form">Saiba Mais <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rs-featured-2__btn">
+                        <a class="main-btn" href="#rs-contact-form"> Fale com um Especialista <i class="ri-arrow-right-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rs-why-choose" class="rs-why-choose-2 pb-85">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="why-choose-2__content">
+                        <div class="rs-section-title black">
+                            <div class="top-sub-heading">
+                                <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                                <span>Por que escolher a sellpag?</span>
+                                <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                            </div>
+                            <h2 class="title split-in-fade">Segurança, Transparência e Tecnologia de Ponta.</h2>
+                            <p>Nossos pilares garantem que sua operação de pagamentos seja sempre eficiente, confiável e pronta para crescer.</p>
+                        </div>
+                        <div class="skill-bars">
+                            <div class="rs-progress-skill why-choose-two__progress">
+                                <h4 class="rs-progress__title">Segurança das Transações</h4>
+                                <div class="rs-progress__bar">
+                                    <div class="rs-progress__inner rs-count-bar counted" data-percent="100%">
+                                        <p class="rs-progress__number count-text">100%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rs-progress-skill why-choose-two__progress">
+                                <h4 class="rs-progress__title">Disponibilidade da Plataforma (Uptime)</h4>
+                                <div class="rs-progress__bar">
+                                    <div class="rs-progress__inner rs-count-bar counted" data-percent="99.9%">
+                                        <p class="rs-progress__number count-text">99.9%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rs-progress-skill why-choose-two__progress">
+                                <h4 class="rs-progress__title">Satisfação do Cliente</h4>
+                                <div class="rs-progress__bar">
+                                    <div class="rs-progress__inner rs-count-bar counted" data-percent="98%">
+                                        <p class="rs-progress__number count-text">98%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rs-why-choose-2__thumb wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                        <div class="rs-thumb-1">
+                            <img src="https://via.placeholder.com/500x786/16A085/FFFFFF?text=Diferencial+1" alt="Imagem Diferencial 1">
+                        </div>
+                        <div class="rs-thumb-2">
+                            <img src="https://via.placeholder.com/500x629/27AE60/FFFFFF?text=Diferencial+2" alt="Imagem Diferencial 2">
+                            <img src="assets/images/why-choose/chose-right-bottom.png" alt="Ilustração de atendimento 24/7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rs-pricing" class="rs-pricing pt-110 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="rs-section-title black">
+                        <div class="top-sub-heading">
+                            <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                            <span>Comece Agora</span>
+                            <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                        </div>
+                        <h2 class="title split-in-fade">Nossos planos populares</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="rs-pricing__item">
+                        <div class="rs-pricing__top-header">
+                            <span>Plano Básico</span>
+                            <div class="rs-pricing__price-box">
+                                <h3 class="title">Taxa Fixa <span>Por Transação</span></h3>
+                            </div>
+                        </div>
+                        <div class="rs-pricing__body">
+                            <ul>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Split de Pagamentos</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Dashboard de Gestão</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Suporte via Email</li>
+                                <li class="list disabled"><i class="ri-checkbox-blank-circle-line"></i> Relatórios Avançados</li>
+                                <li class="list disabled"><i class="ri-checkbox-blank-circle-line"></i> Integração via API</li>
+                            </ul>
+                            <a class="main-btn" href="#rs-contact-form">Comece Agora <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rs-pricing__item">
+                        <div class="rs-pricing__top-header">
+                            <span>Plano Essencial</span>
+                            <div class="rs-pricing__price-box">
+                                <h3 class="title">Consulte-nos <span>Ideal para escalar</span></h3>
+                            </div>
+                        </div>
+                        <div class="rs-pricing__body">
+                             <ul>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Tudo do Plano Básico</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Relatórios Avançados</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Integração via API</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Suporte via Chat</li>
+                                <li class="list disabled"><i class="ri-checkbox-blank-circle-line"></i> Gerente de Contas</li>
+                            </ul>
+                            <a class="main-btn" href="#rs-contact-form">Fale Conosco <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="rs-pricing__item last-item">
+                        <div class="rs-pricing__top-header">
+                            <span>Plano Empresarial</span>
+                            <div class="rs-pricing__price-box">
+                                <h3 class="title">Personalizado <span>Para seu negócio</span></h3>
+                            </div>
+                        </div>
+                        <div class="rs-pricing__body">
+                            <ul>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Tudo do Plano Essencial</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Gerente de Contas Dedicado</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Onboarding Personalizado</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> Suporte Prioritário</li>
+                                <li class="list"><i class="ri-checkbox-circle-line"></i> SLAs de Atendimento</li>
+                            </ul>
+                            <a class="main-btn" href="#rs-contact-form">Solicite uma Proposta <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rs-newsletter-2 pt-95 pb-110" id="rs-contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="rs-newsletter-2__box">
+                        <h2 class="title split-in-fade">Pronto para otimizar seus pagamentos com a <span>sellpag</span>?</h2>
+                        <p class="mb-40">Preencha o formulário e um de nossos especialistas entrará em contato em breve para entender suas necessidades e apresentar a melhor solução.</p>
+                        <form action="#" class="contact-form-area">
+                            <div class="row">
+                                <div class="col-md-6 mb-30">
+                                    <input type="text" name="name" placeholder="Seu Nome Completo*" required>
+                                </div>
+                                <div class="col-md-6 mb-30">
+                                    <input type="email" name="email" placeholder="Email Corporativo*" required>
+                                </div>
+                                <div class="col-md-6 mb-30">
+                                    <input type="text" name="company" placeholder="Nome da Sua Empresa*" required>
+                                </div>
+                                <div class="col-md-6 mb-30">
+                                    <input type="text" name="phone" placeholder="Telefone/WhatsApp*" required>
+                                </div>
+                                <div class="col-md-12 mb-30">
+                                    <input type="text" name="role" placeholder="Seu Cargo na Empresa">
+                                </div>
+                                <div class="col-md-12 mb-40">
+                                    <textarea name="message" placeholder="Mensagem (opcional)"></textarea>
+                                </div>
+                            </div>
+                            <button class="main-btn" type="submit">Quero uma Demonstração <i class="ri-arrow-right-fill"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+        <div class="rs-newsletter-2__shape-1">
+            <img class="gsap-rotate" src="assets/images/newsletter/close-ico-yeloow-grad.svg" alt="">
+        </div>
+        <div class="rs-newsletter-2__shape-2">
+            <img class="gsap-move down-100 start-91" src="assets/images/newsletter/circle-white.svg" alt="">
+        </div>
+    </section>
+    <div class="rs-faq pb-120" id="rs-faq">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rs-faq__thumb wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                        <img src="https://via.placeholder.com/500x500/F79C53/FFFFFF?text=IMAGEM+FAQ" alt="faq sellpag">
+                        <div class="rs-shape">
+                            <img src="assets/images/faq/couple-ball-layer.svg" alt="faq">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rs-faq__content">
+                        <div class="rs-section-title black">
+                            <div class="top-sub-heading">
+                                <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                                <span>FAQ</span>
+                                <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                            </div>
+                            <h2 class="title split-in-fade">Perguntas frequentes sobre a sellpag.</h2>
+                        </div>
+                        <div class="rs-faq__wrapper">
+                            <div class="accordion active">
+                                <div class="accordion_tab active">
+                                    01. O que é o split de pagamentos da sellpag?
+                                    <div class="accordion_arrow">
+                                        <i class="ri-add-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion_content">
+                                    <div class="accordion_item">
+                                        <p>É uma solução que permite dividir automaticamente o valor de uma transação entre múltiplos recebedores (sua empresa, parceiros, vendedores, franqueados) no momento da venda, de forma transparente e eficiente.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion_tab">
+                                    02. Quais tipos de negócios podem se beneficiar da sellpag?
+                                    <div class="accordion_arrow">
+                                        <i class="ri-add-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion_content">
+                                    <div class="accordion_item">
+                                        <p>Ideal para marketplaces, e-commerces com múltiplos vendedores, franquias, plataformas de serviço e qualquer negócio que precise automatizar o repasse de pagamentos para diferentes partes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion_tab">
+                                    03. Como funciona a integração da sellpag?
+                                    <div class="accordion_arrow">
+                                        <i class="ri-add-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion_content">
+                                    <div class="accordion_item">
+                                        <p>Oferecemos uma API robusta e de fácil integração, acompanhada de uma documentação completa e suporte técnico para auxiliar em todo o processo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion_tab">
+                                    04. A sellpag é segura?
+                                    <div class="accordion_arrow">
+                                        <i class="ri-add-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion_content">
+                                    <div class="accordion_item">
+                                        <p>Sim, a segurança é nossa prioridade. Utilizamos as mais avançadas tecnologias de criptografia e conformidade com as normas do mercado para proteger todas as transações e dados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rs-faq__link">
+                            <a class="main-btn" href="#rs-contact-form">Ainda tem Dúvidas? <i class="ri-arrow-right-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="rs-testimonial-2 pt-110 pb-120" id="rs-testimonials">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="rs-testimonial-2__left-content">
+                        <div class="rs-section-title black">
+                            <div class="top-sub-heading">
+                                <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon">
+                                <span>Depoimentos</span>
+                                <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon">
+                            </div>
+                            <h2 class="title split-in-fade">O que nossos clientes satisfeitos dizem sobre a sellpag?</h2>
+                            <div class="rs-thumb">
+                                <img src="https://via.placeholder.com/400x300/F26F20/FFFFFF?text=IMAGEM+DEPOIMENTOS" alt="Depoimentos sellpag">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rs-testimonial-2__slider-box">
+                        <div class="rs-carousel owl-carousel" data-loop="true" data-items="1" data-margin="0" data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="800" data-dots="true" data-nav="false" data-nav-speed="false" data-center-mode="false" data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="true" data-ipad-device="1" data-ipad-device-nav="false" data-ipad-device-dots="true" data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="true" data-md-device="1" data-lg-device="1" data-md-device-nav="false" data-md-device-dots="true" data-doteach="true">
+                            <div class="rs-testimonial-2__items">
+                                <div class="testimonial-content">
+                                    <img src="assets/images/testimonial/quote_orange.svg" alt="">
+                                    <p>“A sellpag revolucionou a forma como gerenciamos os pagamentos. A automação do split nos poupou inúmeras horas e eliminou erros, permitindo que a nossa equipe se concentre em atividades mais estratégicas.”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="https://via.placeholder.com/80x80/D35400/FFFFFF?text=CLIENTE1" alt="Foto do Cliente 1">
+                                    </div>
+                                    <div class="author-content">
+                                        <h5 class="title">Maria Silva</h5>
+                                        <span>CEO, Empresa Exemplo Digital</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rs-testimonial-2__items">
+                                <div class="testimonial-content">
+                                    <img src="assets/images/testimonial/quote_orange.svg" alt="">
+                                    <p>“Sempre tivemos desafios com a conciliação de pagamentos para nossos múltiplos parceiros. A sellpag trouxe a transparência e a eficiência que precisávamos, com um suporte incrível.”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="https://via.placeholder.com/80x80/D35400/FFFFFF?text=CLIENTE2" alt="Foto do Cliente 2">
+                                    </div>
+                                    <div class="author-content">
+                                        <h5 class="title">João Oliveira</h5>
+                                        <span>Diretor Financeiro, Marketplace Online</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rs-testimonial-2__items">
+                                <div class="testimonial-content">
+                                    <img src="assets/images/testimonial/quote_orange.svg" alt="">
+                                    <p>“A integração da API da sellpag foi surpreendentemente simples. Em pouco tempo, tínhamos todo o nosso sistema de pagamentos funcionando de forma otimizada e segura.”</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-thumb">
+                                        <img src="https://via.placeholder.com/80x80/D35400/FFFFFF?text=CLIENTE3" alt="Foto do Cliente 3">
+                                    </div>
+                                    <div class="author-content">
+                                        <h5 class="title">Ana Costa</h5>
+                                        <span>Gerente de Projetos, Startup de Tecnologia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="rs-contact" class="rs-footer rs-footer-2">
+        <div class="rs-footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="rs-footer__info-box">
+                            <div class="icon">
+                                <img src="assets/images/footer/info-3.png" alt="">
+                            </div>
+                            <div class="content">
+                                <span>Ligue para nós</span>
+                                <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rs-footer__info-box">
+                            <div class="icon">
+                                <img src="assets/images/footer/info-1.png" alt="">
+                            </div>
+                            <div class="content">
+                                <span>Envie-nos um Email</span>
+                                <a href="mailto:contato@sellpag.com.br">contato@sellpag.com.br</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rs-footer__info-box">
+                            <div class="icon">
+                                <img src="assets/images/footer/info-2.png" alt="">
+                            </div>
+                            <div class="content">
+                                <span>Nosso Endereço</span>
+                                <h4 class="title"> Av. Paulista, 1000 - São Paulo, SP </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rs-footer__main-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="rs-footer__about-box">
+                            <a href="index.html"><img src="https://via.placeholder.com/180x60/F26F20/FFFFFF?text=SELLPAG+LOGO" alt="sellpag Logo Rodapé"></a>
+                            <p>A sellpag oferece soluções inovadoras para descomplicar a gestão e o split de pagamentos do seu negócio.</p>
+                            <div class="rs-footer__social">
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="ri-twitter-x-fill"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rs-footer__navigation">
+                            <div class="rs-footer-title">
+                                <h4 class="title">Links Úteis</h4>
+                            </div>
+                            <ul>
+                                <li><a href="#rs-features"><i class="ri-arrow-right-fill"></i> Nossas Soluções</a></li>
+                                <li><a href="#rs-how-it-works"><i class="ri-arrow-right-fill"></i> Como Funciona</a></li>
+                                <li><a href="#rs-faq"><i class="ri-arrow-right-fill"></i> Perguntas Frequentes</a></li>
+                                <li><a href="#rs-testimonials"><i class="ri-arrow-right-fill"></i> Depoimentos</a></li>
+                                <li><a href="#rs-contact-form"><i class="ri-arrow-right-fill"></i> Contato</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rs-footer__newsletter">
+                            <div class="rs-footer-title">
+                                <h4 class="title">Newsletter</h4>
+                            </div>
+                            <p>Inscreva-se para receber atualizações, novidades e dicas sobre gestão de pagamentos.</p>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="email" placeholder="Seu email aqui">
+                                    <button class="main-btn">Assinar <svg width="13" height="14" viewBox="0 0 13 14" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.5 7.8125H0V6.1875H6.5V0.5L13 7L6.5 13.5V7.8125Z" fill="#fff"></path>
+                                        </svg></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rs-footer__menu">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="rs-footer__copyright-text">
+                            <p>© 2024 sellpag. Todos os direitos reservados.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="rs-footer__menu-box">
+                            <ul>
+                                <li><a href="#">Política de Privacidade</a></li>
+                                <li><a href="#">Termos de Uso</a></li>
+                                <li><a href="#">Mapa do Site</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="scrollUp">
+        <svg class="arrowup" viewBox="0 0 24 24" width="18" height="18">
+            <path d="M13 7.828V20h-2V7.828l-5.364 5.364-1.414-1.414L12 4l7.778 7.778-1.414 1.414L13 7.828z" fill="#fff"></path>
+        </svg>
+        <svg class="scrollprogress" width="40" height="40">
+            <circle class="progress-circle" cx="20" cy="20" r="18" stroke-width="2" fill="none" stroke="#fff" stroke-dasharray="113.1" stroke-dashoffset="113.1"></circle>
+        </svg>
+    </div>
+    <div id="rs-mouse">
+        <div id="cursor-ball"></div>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/ajax-contact.js"></script>
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/jquery.appear.min.js"></script>
+    <script src="./assets/js/typer.js"></script>
+    <script src="./assets/js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="./assets/js/jquery.marquee.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/flickity.pkgd.min.js"></script>
+    <script src="./assets/js/odometer.min.js"></script>
+    <script src="./assets/js/skeletabs.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="./assets/js/interactions/gsap.min.js"></script>
+    <script src="./assets/js/interactions/rs-scroll-trigger.min.js"></script>
+    <script src="./assets/js/interactions/rs-splitText.min.js"></script>
+    <script src="./assets/js/interactions/rs-anim-int.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
