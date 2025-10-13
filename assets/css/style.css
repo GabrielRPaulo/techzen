@@ -711,6 +711,10 @@ hr {
   width: auto;
   height: 50px;
 }
+.logo-area a img {
+  max-width: 180px !important; /* Ajuste este valor (ex: 200px) se quiser a logo maior ou menor */
+  height: auto !important;     /* Mantém a proporção correta da imagem */
+}
 @media only screen and (max-width: 767px) {
   .full-width-header .rs-header .menu-area .rs-menu-area .logo-area img {
     height: 40px;
