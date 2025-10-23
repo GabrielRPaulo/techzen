@@ -3437,7 +3437,7 @@ html.menu-is-open .menu-canvas-layer {
   }
 }
 .rs-banner-2 {
-  background-image: url(../images/banner/home-banner-bg-2.jpg);
+  background-image: url(../images/sellpag/bannerPrincipal.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3537,7 +3537,7 @@ html.menu-is-open .menu-canvas-layer {
 }
 
 .rs-banner-3 {
-  background-image: url(../images/banner/banner-bg-1.png);
+  background-image: url(../images/sellpag/BannerSellPag.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10718,7 +10718,6 @@ html.menu-is-open .menu-canvas-layer {
   border-color: #EBEBEB;
   cursor: pointer;
 }
-
 .rs-contact-brand .rs-contact-brand__box .brand-item img.item-2 {
   display: none;
 }
@@ -10726,6 +10725,7 @@ html.menu-is-open .menu-canvas-layer {
 /*----------------------------------------*/
 /*  03.12 - Team
 /*----------------------------------------*/
+
 .rs-team {
   background-image: url(../images/team/team_section_bg2.jpg);
   background-position: center;
@@ -11612,7 +11612,7 @@ html.menu-is-open .menu-canvas-layer {
 }
 
 .rs-newsletter-2 {
-  background-image: url(../images/newsletter/cta-bg-2.jpg);
+  background-image: url(../images/sellpag/banner1920x486.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11665,7 +11665,7 @@ html.menu-is-open .menu-canvas-layer {
   background: -webkit-linear-gradient(130deg, #f28e26 0%, #f24c1a 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*-webkit-text-fill-color: transparent;*/
 }
 .rs-newsletter-2__btn a {
   margin-top: 35px;
@@ -16950,4 +16950,18 @@ html.menu-is-open .menu-canvas-layer {
   border: 0;
   font-size: 16px;
   margin-right: 15px;
+}
+  .rs-featured-2__item .rs-icon i {
+  color: #002559; /* Sua cor azul escuro */
+  transition: color 0.3s ease; /* Adiciona uma transição suave */
+  font-size: 30px;
+}
+
+/* Cor do ícone quando o mouse passa sobre o item inteiro */
+.rs-featured-2__item:hover .rs-icon i {
+  color: #FF7B00; /* Sua cor laranja */
+}
+
+#rs-why-choose {
+  margin-top: 80px; /* Ajuste este valor (ex: 60px, 100px) como desejar */
 }
