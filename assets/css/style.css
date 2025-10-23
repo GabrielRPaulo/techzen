@@ -16952,14 +16952,14 @@ html.menu-is-open .menu-canvas-layer {
   margin-right: 15px;
 }
   .rs-featured-2__item .rs-icon i {
-  color: #002559; /* Sua cor azul escuro */
+  color: #fff; /* Sua cor azul escuro */
   transition: color 0.3s ease; /* Adiciona uma transição suave */
   font-size: 30px;
 }
 
 /* Cor do ícone quando o mouse passa sobre o item inteiro */
 .rs-featured-2__item:hover .rs-icon i {
-  color: #FF7B00; /* Sua cor laranja */
+  color: #fff; /* Sua cor laranja */
 }
 
 #rs-why-choose {
