@@ -3437,22 +3437,34 @@ html.menu-is-open .menu-canvas-layer {
   }
 }
 .rs-banner-2 {
-  background-image: url(../images/sellpag/bannerPrincipal.png);
+  background-image: url(../images/sellpag/bannerPrincipal.png); /* Certifique-se que o caminho está correto */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding: 300px 0 200px;
+  overflow-x: hidden; /* Adicionado para evitar rolagem lateral como segurança */
+}
+
+/* Ajuste de padding para telas menores */
+@media only screen and (max-width: 991px) {
+  .rs-banner-2 {
+    padding: 200px 0 180px;
+  }
 }
 @media only screen and (max-width: 575px) {
   .rs-banner-2 {
     padding: 150px 0px 160px;
   }
 }
+
+/* --- Conteúdo do Banner --- */
 .rs-banner-2__content {
   text-align: center;
 }
+
+/* --- Subtítulo (Bem-vindo à SellPag) --- */
 .rs-banner-2__content .rs-sub-heading {
-  margin-top: -70px;
+  margin-top: -70px; /* Mantido do original */
 }
 .rs-banner-2__content .rs-sub-heading span {
   color: #ffffff;
@@ -3464,76 +3476,76 @@ html.menu-is-open .menu-canvas-layer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* Garantir que as imagens pequenas (SVGs) no subtítulo sejam responsivas */
+.rs-banner-2__content .rs-sub-heading img {
+   max-width: 100%;
+   height: auto;
+   display: inline-block; /* Evita espaços extras */
+   vertical-align: middle; /* Alinha melhor com o texto */
+}
+
+
+/* --- Título Principal (H1) --- */
 .rs-banner-2__content .title {
   color: #ffffff;
   font-size: 90px;
-  line-height: 86px;
+  line-height: 86px; /* Pode ser um pouco apertado, considere aumentar levemente se necessário */
   letter-spacing: 7px;
   font-family: "Urbanist", sans-serif;
   margin-top: 17px;
+  word-wrap: break-word; /* Garante quebra de palavras longas */
+  overflow-wrap: break-word; /* Garante quebra de palavras longas (moderno) */
 }
+/* Ajustes Responsivos do Título */
 @media only screen and (min-width: 1200px) and (max-width: 1549px) {
   .rs-banner-2__content .title {
     font-size: 70px;
     line-height: 80px;
+    letter-spacing: 5px; /* Reduzido */
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .rs-banner-2__content .title {
     font-size: 60px;
     line-height: 70px;
+    letter-spacing: 3px; /* Reduzido */
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .rs-banner-2__content .title {
-    font-size: 60px;
-    line-height: 70px;
-  }
-}
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) { /* Combinado 768-991 e abaixo */
   .rs-banner-2__content .title {
     font-size: 50px;
     line-height: 60px;
+    letter-spacing: 2px; /* Reduzido */
   }
 }
 @media only screen and (max-width: 575px) {
   .rs-banner-2__content .title {
     font-size: 36px;
     line-height: 46px;
+    letter-spacing: 1px; /* Reduzido */
   }
 }
+
+/* --- Parágrafo (Descrição) --- */
 .rs-banner-2__content p {
   color: #ffffff;
-  padding: 18px 150px 0;
+  padding: 18px 150px 0; /* Padding original para telas grandes */
 }
-@media only screen and (min-width: 1200px) and (max-width: 1549px) {
+/* Ajustes Responsivos do Parágrafo (padding lateral removido) */
+@media only screen and (max-width: 1199px) { /* Aplica a todas as telas abaixo de 1200px */
   .rs-banner-2__content p {
-    padding: 17px 80px 0;
+    padding-left: 15px; /* Adiciona um pequeno padding para não colar nas bordas */
+    padding-right: 15px; /* Adiciona um pequeno padding para não colar nas bordas */
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .rs-banner-2__content p {
-    padding: 17px 0px 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .rs-banner-2__content p {
-    padding: 17px 0px 0;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1549px) {
-  .rs-banner-2__content p {
-    padding: 17px 0px 0;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .rs-banner-2__content p {
-    padding: 17px 0px 0;
-  }
-}
-.rs-banner-2__content a {
+/* Removidas media queries redundantes para o parágrafo */
+
+
+/* --- Botão Principal --- */
+.rs-banner-2__content a.main-btn { /* Seletor mais específico para o botão */
   background-image: linear-gradient(90deg, #f28e26 0%, #f24c1a 55%, #f28e26 90%);
   margin-top: 40px;
+  /* (Estilos adicionais do .main-btn já devem existir em outra parte do CSS) */
 }
 
 .rs-banner-3 {
