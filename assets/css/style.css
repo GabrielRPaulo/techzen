@@ -4391,11 +4391,13 @@ html.menu-is-open .menu-canvas-layer {
 
 .rs-service-2 {
   background-image: url(../images/service/service-bg-shape-2.png);
-  background-size: auto;
+  background-size: auto; /* Considere 'contain' se a imagem vazar */
   background-repeat: no-repeat;
   background-position: top left;
   position: relative;
   z-index: 10;
+  /* Adicionado para segurança contra overflow de backgrounds */
+  overflow-x: hidden;
 }
 .rs-service-2::before {
   position: absolute;
@@ -4407,39 +4409,41 @@ html.menu-is-open .menu-canvas-layer {
   background-image: url(../images/service/service-bg-shape-1.png);
   background-position: center right;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: auto; /* Considere 'contain' se a imagem vazar */
   z-index: -1;
   opacity: 0.5;
 }
+
 .rs-service-2__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas padrão (forma mais curta de escrever) */
   grid-gap: 20px;
 }
+
+/* Telas de Tablet (Landscape) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .rs-service-2__grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
   }
 }
+
+/* Telas de Tablet (Portrait) e Celulares Maiores */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rs-service-2__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas */
   }
 }
+
+/* Telas de Celular (Abaixo de 768px) - CORRIGIDO */
 @media only screen and (max-width: 767px) {
   .rs-service-2__grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr; /* UMA coluna para todos os celulares */
   }
 }
-@media only screen and (max-width: 575px) {
-  .rs-service-2__grid {
-    grid-template-columns: 1fr;
-  }
-}
-.rs-service-2__icon img {
-  transition-duration: 0.5s;
-  width: 60px;
-}
+/* A media query max-width: 575px não é mais necessária para o grid-template-columns, pois a de 767px já cobre */
+
+
+/* --- Estilo dos Itens --- */
 .rs-service-2__item {
   background-color: #fff;
   background-image: url(../images/service/bg-shape-orange.png);
@@ -4448,28 +4452,21 @@ html.menu-is-open .menu-canvas-layer {
   background-repeat: no-repeat;
   box-shadow: 0px -4px 34px 0px rgba(0, 30, 76, 0.06);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /* Ajuda a conter elementos internos */
   text-align: center;
-  padding: 35px 40px 35px 40px;
+  padding: 35px 40px 35px 40px; /* Padding original */
   margin-top: 30px;
   position: relative;
   z-index: 10;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1549px) {
+
+/* Redução de padding para telas menores */
+@media only screen and (max-width: 1199px) { /* Simplificado para pegar tablets e menores */
   .rs-service-2__item {
     padding: 35px 20px 35px 20px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .rs-service-2__item {
-    padding: 35px 20px 35px 20px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .rs-service-2__item {
-    padding: 35px 20px 35px 20px;
-  }
-}
+/* Efeito Hover (Pseudo-elemento) */
 .rs-service-2__item::before {
   position: absolute;
   content: "";
@@ -4485,30 +4482,46 @@ html.menu-is-open .menu-canvas-layer {
   opacity: 0;
   transition: all linear 0.3s;
 }
+.rs-service-2__item:hover::before {
+  opacity: 1;
+}
+
+/* Ícone dentro do item */
+.rs-service-2__icon { /* Adicionado seletor para o container do ícone */
+   margin-bottom: 15px; /* Adiciona espaço abaixo do ícone */
+}
+.rs-service-2__icon i { /* Estilo para o ícone FontAwesome */
+    color: #FF7B00;
+    font-size: 28px;
+    transition: color 0.3s ease; /* Adiciona transição suave */
+}
+.rs-service-2__item:hover .rs-service-2__icon i {
+    color: #ffffff; /* Muda a cor do ícone para branco no hover */
+}
+
+
+/* Título dentro do item */
 .rs-service-2__item .title {
   font-size: 22px;
   font-weight: 700;
   line-height: 32px;
   font-family: "Urbanist", sans-serif;
-  margin-top: 23px;
+  /* margin-top: 23px; Removido, espaço controlado pelo margin-bottom do ícone */
   color: #002559;
-  margin-bottom: 8px;
+  margin-bottom: 0; /* Removido margin-bottom extra */
   display: block;
-  padding: 0 12px;
+  /* padding: 0 12px; Removido, padding já está no item pai */
+  transition: color 0.3s ease; /* Adiciona transição suave */
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* Título em telas menores */
+@media only screen and (max-width: 991px) { /* Simplificado */
   .rs-service-2__item .title {
     font-size: 18px;
     line-height: 28px;
   }
 }
-.rs-service-2__item:hover::before {
-  opacity: 1;
-}
-.rs-service-2__item:hover .rs-service-2__icon {
-  filter: brightness(1000%) contrast(100%) saturate(0%) blur(0px) hue-rotate(200deg);
-}
-.rs-service-2__item:hover .title a {
+/* Cor do título no hover */
+.rs-service-2__item:hover .title { /* Link <a> removido do seletor, aplica direto no título */
   color: #ffffff;
 }
 
