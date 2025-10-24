@@ -9737,7 +9737,7 @@ html.menu-is-open .menu-canvas-layer {
   height: 60px;
   border-radius: 50%;
   display: block;
-  background-image: url(../images/testimonial/testi1.jpg);
+  background-image: url(../images/sellpag/cliente_seo.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9749,10 +9749,10 @@ html.menu-is-open .menu-canvas-layer {
   box-shadow: 0 0 0 3px #F26F20;
 }
 .rs-testimonial-2__slider-box .owl-dots .owl-dot:nth-child(2) span {
-  background-image: url(../images/testimonial/testi2.jpg);
+  background-image: url(../images/sellpag/cliente_homem.png);
 }
 .rs-testimonial-2__slider-box .owl-dots .owl-dot:nth-child(3) span {
-  background-image: url(../images/testimonial/testi3.jpg);
+  background-image: url(../images/sellpag/cliente_gerente.png);
 }
 .rs-testimonial-2__slider-box .owl-dots .owl-dot:nth-child(4) span {
   background-image: url(../images/testimonial/testi4.jpg);

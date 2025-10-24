@@ -28,24 +28,35 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <style>
-        .logo-area a img {
-            max-width: 180px !important; /* Ajuste conforme necessário */
-            height: auto !important;
-        }
-        /* Ajuste opcional para tamanho dos ícones adicionados, se necessário */
-        .rs-service-2__icon i,
-        .rs-featured-2__item .rs-icon i,
-        .rs-footer__info-box .icon i {
-           /*  color: #FF7B00;  Cor Laranja - ajuste se preferir outra */
-        }
-        .rs-featured-2__item .rs-icon i {
-            font-size: 24px; /* Tamanho para ícones das Vantagens */
-        }
-         .rs-service-2__icon i,
-         .rs-footer__info-box .icon i {
-             font-size: 28px; /* Tamanho para ícones Desafios e Rodapé */
-         }
-    </style>
+    .logo-area a img {
+        max-width: 180px !important; /* Ajuste conforme necessário */
+        height: auto !important;
+    }
+
+    /* --- Cor e Tamanho para Ícones Desafios e Rodapé --- */
+    .rs-service-2__icon i,
+    .rs-footer__info-box .icon i {
+        color: #FF7B00; /* Laranja para Desafios e Rodapé */
+        font-size: 28px;
+    }
+
+    /* --- Estilos INICIAIS para Ícones da Seção Vantagens --- */
+    .rs-featured-2__item .rs-icon i {
+        color: #FFFFFF; /* Cor inicial BRANCA */
+        font-size: 25px; /* Tamanho ajustado (mantenha ou altere) */
+        transition: color 0.3s ease; /* Transição suave */
+    }
+
+    /* --- Efeito HOVER para Ícones da Seção Vantagens --- */
+    .rs-featured-2__item:hover .rs-icon i {
+        color: #FF7B00; /* Cor LARANJA no hover */
+    }
+
+    /* --- Aumentar margem acima da seção "Por que escolher" --- */
+    #rs-why-choose {
+      margin-top: 80px; /* Ajuste este valor (ex: 60px, 100px) como desejar */
+    }
+</style>
 </head>
 
 <body class="home-page-2">
@@ -530,7 +541,7 @@
                             <div class="top-sub-heading"> <img src="assets/images/heart-pulse-rate-orange-2.svg" alt="icon"> <span>Depoimentos</span> <img src="assets/images/heart-pulse-rate-orange.svg" alt="icon"> </div>
                             <h2 class="title split-in-fade">O que nossos clientes dizem?</h2>
                             <div class="rs-thumb">
-                                <img src="assets/images/depoimentos-image.png" alt="Clientes SellPag">
+                                <img src="assets\images\sellpag\ClientesFalando.png" alt="Clientes SellPag">
                             </div>
                         </div>
                     </div>
@@ -544,7 +555,7 @@
                                     <p>“A SellPag revolucionou nossa gestão de pagamentos. A automação do split nos poupou horas e eliminou erros, permitindo focar em atividades mais estratégicas.”</p>
                                 </div>
                                 <div class="testimonial-author">
-                                    <div class="author-thumb"> <img src="assets/images/clients/cliente1-foto.png" alt="Foto Cliente 1"> </div>
+                                    <div class="author-thumb"> <img src="assets\images\sellpag\cliente_seo.png" alt="Foto Cliente 1"> </div>
                                     <div class="author-content"> <h5 class="title">Maria Silva</h5> <span>CEO, Empresa Exemplo Digital</span> </div>
                                 </div>
                             </div>
@@ -554,7 +565,7 @@
                                     <p>“Sempre tivemos desafios com a conciliação para múltiplos parceiros. A SellPag trouxe a transparência e eficiência que precisávamos, com um suporte incrível.”</p>
                                 </div>
                                 <div class="testimonial-author">
-                                     <div class="author-thumb"> <img src="assets/images/clients/cliente2-foto.png" alt="Foto Cliente 2"> </div>
+                                     <div class="author-thumb"> <img src="assets\images\sellpag\cliente_homem.png" alt="Foto Cliente 2"> </div>
                                     <div class="author-content"> <h5 class="title">João Oliveira</h5> <span>Diretor Financeiro, Marketplace Online</span> </div>
                                 </div>
                             </div>
@@ -564,7 +575,7 @@
                                     <p>“A integração da API foi surpreendentemente simples. Em pouco tempo, tínhamos nosso sistema de pagamentos funcionando de forma otimizada e segura.”</p>
                                 </div>
                                 <div class="testimonial-author">
-                                     <div class="author-thumb"> <img src="assets/images/clients/cliente3-foto.png" alt="Foto Cliente 3"> </div>
+                                     <div class="author-thumb"> <img src="assets\images\sellpag\cliente_gerente.png" alt="Foto Cliente 3"> </div>
                                     <div class="author-content"> <h5 class="title">Ana Costa</h5> <span>Gerente de Projetos, Startup Tech</span> </div>
                                 </div>
                             </div>
@@ -604,7 +615,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="rs-footer__about-box">
-                             <a href="index.html"><img src="assets/images/sellpag/VERTICAL-PNG-white.png" alt="SellPag Logo Branco"></a>
+                             <a href="index.html"><img src="assets\images\sellpag\VERTICAL-PNG.png" alt="SellPag Logo Branco"></a>
                             <p>A SellPag oferece soluções inovadoras para descomplicar a gestão e o split de pagamentos do seu negócio.</p>
                             <div class="rs-footer__social">
                                 <ul>
