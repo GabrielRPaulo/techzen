@@ -167,7 +167,11 @@ ul:last-child {
 hr {
   border-top-width: 2px;
 }
-
+@media only screen and (max-width: 767px) {
+  .hide-on-mobile {
+    display: none !important; /* Esconde o elemento em telas menores que 768px */
+  }
+}
 @media only screen and (min-width: 1550px) {
   .custom-container {
     max-width: 1510px;
