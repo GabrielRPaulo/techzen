@@ -609,7 +609,7 @@ hr {
   text-align: center;
 }
 .loader .loader-icon img {
-  width: 45px;
+  width: 80px;
 }
 
 @keyframes loaderspin {
@@ -713,7 +713,7 @@ hr {
 }
 .full-width-header .rs-header .menu-area .rs-menu-area .logo-area img {
   width: auto;
-  height: 50px;
+  height: 270px;
 }
 .logo-area a img {
   max-width: 270px !important; /* Ajuste este valor (ex: 200px) se quiser a logo maior ou menor */
@@ -3441,7 +3441,7 @@ html.menu-is-open .menu-canvas-layer {
   }
 }
 .rs-banner-2 {
-  background-image: url(../images/sellpag/bannerPrincipal.png); /* Certifique-se que o caminho está correto */
+  background-image: url(../images/sellpag/bannerSellPag.png); /* Certifique-se que o caminho está correto */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -3492,7 +3492,7 @@ html.menu-is-open .menu-canvas-layer {
 /* --- Título Principal (H1) --- */
 .rs-banner-2__content .title {
   color: #ffffff;
-  font-size: 90px;
+  font-size: 70px;
   line-height: 86px; /* Pode ser um pouco apertado, considere aumentar levemente se necessário */
   letter-spacing: 7px;
   font-family: "Urbanist", sans-serif;
