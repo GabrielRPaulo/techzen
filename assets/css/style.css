@@ -171,7 +171,7 @@ hr {
   .hide-on-mobile {
     display: none !important; /* Esconde o elemento em telas menores que 768px */
   }
-}
+} 
 @media only screen and (min-width: 1550px) {
   .custom-container {
     max-width: 1510px;
