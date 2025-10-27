@@ -3468,7 +3468,7 @@ html.menu-is-open .menu-canvas-layer {
 
 /* --- Subtítulo (Bem-vindo à SellPag) --- */
 .rs-banner-2__content .rs-sub-heading {
-  margin-top: -70px; /* Mantido do original */
+  margin-top: -40px;/*antido do original */
 }
 .rs-banner-2__content .rs-sub-heading span {
   color: #ffffff;
